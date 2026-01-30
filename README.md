@@ -1,39 +1,87 @@
-# ChemPristine Project
+# ChemPristine
 
-## Project info
+ChemPristine is a modern, high-performance web application designed for the visualization and analysis of chemical equipment data. Built with a focus on ease of use and visual clarity, it allows users to upload, manage, and visualize critical metrics such as flow rates, pressure, and temperature.
 
-This project is a React application built with Vite, TypeScript, and Shadcn UI.
+**Data is beautiful when it's pristine.**
 
-## How can I edit this code?
+---
 
-**Use your preferred IDE**
+## 🚀 Live Demo
 
-If you want to work locally using your own IDE, you can clone this repo and push changes.
+**[https://chempristine-app-v1.web.app](https://chempristine-app-v1.web.app)**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ✨ Features
 
-```sh
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
+-   **Secure Authentication**: Robust user management powered by Supabase Auth (Sign up, Login, Protected Routes).
+-   **Data Management**: Seamlessly upload and manage equipment datasets.
+-   **Interactive Visualizations**: Dynamic charts and graphs to visualize key metrics:
+    -   Flowrate Analysis
+    -   Pressure Distribution
+    -   Temperature Trends
+-   **Equipment Insights**: Detailed breakdowns by equipment type and performance statistics.
+-   **Modern UI/UX**: A clean, responsive interface built with Shadcn UI and Tailwind CSS.
+-   **Historical Data**: Access and review past uploads and analysis sessions.
 
-# Step 2: Navigate to the project directory.
-cd chempristine
+## 🛠️ Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+This project is built using a modern frontend stack to ensure performance, scalability, and developer experience.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+*   **Frontend Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/) for lightning-fast development and building.
+*   **Language**: [TypeScript](https://www.typescriptlang.org/) for type-safe code and better maintainability.
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/) for utility-first, responsive design.
+*   **UI Components**: [Shadcn UI](https://ui.shadcn.com/) for beautiful, accessible, and customizable components.
+*   **Backend & Auth**: [Supabase](https://supabase.com/) for open-source Firebase alternative (Database & Authentication).
+*   **Hosting**: [Firebase Hosting](https://firebase.google.com/docs/hosting) for fast and secure global content delivery.
+*   **Visualization**: [Recharts](https://recharts.org/) / [Chart.js](https://www.chartjs.org/) for rendering complex data visualizations.
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+*   Node.js (v18 or higher)
+*   npm or bun
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/tanusingh04/chempristine-project.git
+    cd chempristine-project
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    # or
+    bun install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+## 📦 Build & Deploy
+
+To build the application for production:
+
+```bash
+npm run build
 ```
 
-## What technologies are used for this project?
+To deploy to Firebase (requires Firebase CLI):
 
-This project is built with:
+```bash
+npm run build
+firebase deploy --only hosting
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
+
+*Developed with ❤️ for Chemistry & Code.*
