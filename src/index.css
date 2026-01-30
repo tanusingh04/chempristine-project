@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chemical Equipment Visualizer - Forest Green & White Theme */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 150 50% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 50% 10%;
+
+    --primary: 153 100% 17%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 20% 95%;
+    --secondary-foreground: 153 100% 17%;
+
+    --muted: 150 15% 95%;
+    --muted-foreground: 150 20% 40%;
+
+    --accent: 150 30% 90%;
+    --accent-foreground: 153 100% 17%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 20% 85%;
+    --input: 150 20% 85%;
+    --ring: 153 100% 17%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 153 100% 17%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 153 100% 17%;
+    --sidebar-accent: 153 80% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 153 80% 25%;
+    --sidebar-ring: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --chart-1: 153 100% 17%;
+    --chart-2: 153 80% 30%;
+    --chart-3: 153 60% 45%;
+    --chart-4: 153 40% 60%;
+    --chart-5: 153 30% 75%;
+  }
+
+  .dark {
+    --background: 150 30% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 150 30% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 150 30% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 153 70% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 20% 18%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 150 20% 18%;
+    --muted-foreground: 150 15% 60%;
+
+    --accent: 150 25% 22%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 150 20% 20%;
+    --input: 150 20% 20%;
+    --ring: 153 70% 45%;
+
+    --sidebar-background: 150 30% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 153 70% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 25% 18%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 150 20% 20%;
+    --sidebar-ring: 153 70% 45%;
+
+    --success: 142 70% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 85% 45%;
+    --warning-foreground: 0 0% 100%;
+
+    --chart-1: 153 70% 45%;
+    --chart-2: 153 60% 55%;
+    --chart-3: 153 50% 65%;
+    --chart-4: 153 40% 75%;
+    --chart-5: 153 30% 85%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/50;
+}
+
+/* File drop zone styles */
+.drop-zone {
+  @apply border-2 border-dashed border-primary/30 rounded-lg transition-all duration-200;
+}
+
+.drop-zone.active {
+  @apply border-primary bg-primary/5;
+}
+
+/* Floating animation for auth page */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent;
+}
+
+/* Glass effect */
+.glass {
+  @apply backdrop-blur-xl bg-background/80 border border-border/50;
+}
+
+/* Shimmer effect for loading states */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
