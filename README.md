@@ -15,6 +15,8 @@ Visualization
 ## 🏗️ ChemPristine Architecture
 
 ![ChemPristine Architecture](assets/architecture.png)
+<img src="assets/architecture.png" alt="ChemPristine Architecture" width="700"/>
+
 
 The ChemPristine system follows a modular, frontend-centric architecture supported by cloud-based backend services.  
 It is designed to be **simple, scalable, and secure**, while enabling rich **data visualization and analysis**.
