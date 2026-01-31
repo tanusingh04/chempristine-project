@@ -1,14 +1,18 @@
 # ChemPristine
 
-ChemPristine is a modern, high-performance web application designed for the visualization and analysis of chemical equipment data. Built with a focus on ease of use and visual clarity, it allows users to upload, manage, and visualize critical metrics such as flow rates, pressure, and temperature.
+ChemPristine is a mainly ML based model integrated with modern website created using TypeScrippt and CSS and Database is powered by Supabase.It helps in visualising the types of equipents data used in chemical labs.It it allows users to upload, manage, and visualize critical metrics such as flow rates, pressure, and temperature.
 
 **Data is beautiful when it's pristine.**
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Website is hotsed at this platoform for demo purposes.
 
 **[https://chempristine-app-v1.web.app](https://chempristine-app-v1.web.app)**
+##
+Visualization
+<img width="1837" height="778" alt="Screenshot 2026-01-31 151415" src="https://github.com/user-attachments/assets/38847ca4-5818-4650-ac3c-65e0a2849f5d" />
+
 
 ---
 
@@ -35,7 +39,9 @@ This project is built using a modern frontend stack to ensure performance, scala
 *   **Backend & Auth**: [Supabase](https://supabase.com/) for open-source Firebase alternative (Database & Authentication).
 *   **Hosting**: [Firebase Hosting](https://firebase.google.com/docs/hosting) for fast and secure global content delivery.
 *   **Visualization**: [Recharts](https://recharts.org/) / [Chart.js](https://www.chartjs.org/) for rendering complex data visualizations.
-
+  
+## Scalibility 
+** For now it is hosted on deafult SupaBase free hosting service later it can be integrated with docker and Kubernetes and can handle multiple user as per needs. 
 ## 🚀 Getting Started
 
 Follow these steps to set up the project locally.
